@@ -1,0 +1,97 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'd12d59a59b1c9cd534c4087b99c6ec63' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystem1","description":"Template for volume1. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => 'bcd5943637fed599b79db8188ecb5db6',
+        'native_key' => 1,
+        'signature' => '50450bcc195d57f788ad123963ec9f77',
+      ),
+      'bfca22437791809b9645ef3f96b9a2ce' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystem2","description":"Template for volume2. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => '571f8333ad7aed02cdf1be712a6f62e2',
+        'native_key' => 2,
+        'signature' => '73fccea0ac854b410b0ca95eeefe001d',
+      ),
+      'ce3053e18845ba8f91231ecfedebb67a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystem3","description":"Template for volume3. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => 'b3e43bcc0106a6364e6a513d3ed48b8b',
+        'native_key' => 3,
+        'signature' => '73d81d62f8cedf9e3b32afb58fdef27b',
+      ),
+      '7b2915bb2c04de88487774131fe89f30' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":4,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystem4","description":"Template for volume4. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => '14e200cb06c2357ff6028e162433441a',
+        'native_key' => 4,
+        'signature' => '7c664b592e6f69e68ffcb7521ba1be9e',
+      ),
+      '56dfd6c11af782aaa8acabba6eca0d94' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":5,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystemPersonal","description":"Template for Personal Folder. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => '5c227ad3ade9b2f17f4e5692e2544669',
+        'native_key' => 5,
+        'signature' => '62e78a03699450a70e060a6ace803edf',
+      ),
+      '2fa7f47481da8869f508381395174299' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":6,"source":0,"property_preprocess":0,"name":"elfinderLocalFileSystem5","description":"Template for volume5. Pure JSON format, no comments allowed. You may add other features from https:\\/\\/github.com\\/Studio-42\\/elFinder\\/wiki\\/Connector-configuration-options-2.1","editor_type":0,"category":0,"cache_type":0,"snippet":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"{\\n  \\"id\\": \\"[[+id]]\\",\\n  \\"driver\\": \\"LocalFileSystem\\",\\n  \\"alias\\": \\"[[+alias]]\\",\\n  \\"path\\": \\"[[+path]]\\",\\n  \\"URL\\": \\"[[+url]]\\",\\n  \\"tmbPath\\": \\"[[+tmbPath]]\\",\\n  \\"quarantine\\": \\"[[+quarantine]]\\",\\n  \\"disabled\\": [[+disabled]],\\n  \\"startPath\\": \\"[[+startPath]]\\",\\n  \\"accessControl\\": \\"[[+accessControl]]\\",\\n  \\"attributes\\": [[+attributes]]\\n}"}',
+        'guid' => 'aa92edd590109e4c45c063e6d77cd6a4',
+        'native_key' => 6,
+        'signature' => '06bfb766733f0ff7a504e50e3dcf251a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'tinymcewrapper',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '63236c748ec4579a98cf535346297065',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '119d9944b4c78989630c452562819167',
+  'native_key' => 2,
+  'object' => '{"id":2,"parent":0,"category":"elfinderVolumes"}',
+);

@@ -1,0 +1,102 @@
+<?php
+/**
+ * Category resolver  for TinymceWrapper extra.
+ * Sets Category Parent
+ *
+ * Copyright 2015 by donShakespeare donShakespeare@gmail.com
+ * Created on 09-01-2015
+ *
+ * TinymceWrapper is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU General Public License as published by the Free Software
+ * Foundation; either version 2 of the License, or (at your option) any later
+ * version.
+ *
+ * TinymceWrapper is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * TinymceWrapper; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ * @package tinymcewrapper
+ * @subpackage build
+ */
+
+/* @var $object xPDOObject */
+/* @var $modx modX */
+/* @var $parentObj modResource */
+/* @var $templateObj modTemplate */
+
+/* @var array $options */
+
+if (!function_exists('checkFields')) {
+    function checkFields($required, $objectFields) {
+        global $modx;
+        $fields = explode(',', $required);
+        foreach ($fields as $field) {
+            if (!isset($objectFields[$field])) {
+                $modx->log(modX::LOG_LEVEL_ERROR, '[Category Resolver] Missing field: ' . $field);
+                return false;
+            }
+        }
+        return true;
+    }
+}
+if ($object->xpdo) {
+    $modx =& $object->xpdo;
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+        case xPDOTransport::ACTION_UPGRADE:
+
+            $intersects = array (
+                'TinymceWrapper' =>  array (
+                  'category' => 'TinymceWrapper',
+                  'parent' => '',
+                ),
+                'elfinderVolumes' =>  array (
+                  'category' => 'elfinderVolumes',
+                  'parent' => 'TinymceWrapper',
+                ),
+                'ResponsiveFileManager' =>  array (
+                  'category' => 'ResponsiveFileManager',
+                  'parent' => 'TinymceWrapper',
+                ),
+                'RoxyFileman' =>  array (
+                  'category' => 'RoxyFileman',
+                  'parent' => 'TinymceWrapper',
+                ),
+                'TinyMCEinits' =>  array (
+                  'category' => 'TinyMCEinits',
+                  'parent' => 'TinymceWrapper',
+                ),
+                'elFinder' =>  array (
+                  'category' => 'elFinder',
+                  'parent' => 'TinymceWrapper',
+                ),
+            );
+
+            if (is_array($intersects)) {
+                foreach ($intersects as $k => $fields) {
+                    /* make sure we have all fields */
+                    if (!checkFields('category,parent', $fields)) {
+                        continue;
+                    }
+                    $categoryObj = $modx->getObject('modCategory', array('category' => $fields['category']));
+                    if (!$categoryObj) {
+                        continue;
+                    }
+                    $parentObj = $modx->getObject('modCategory', array('category' => $fields['parent']));
+                        if ($parentObj) {
+                            $categoryObj->set('parent', $parentObj->get('id'));
+                        }
+                    $categoryObj->save();
+                }
+            }
+            break;
+
+        case xPDOTransport::ACTION_UNINSTALL:
+            break;
+    }
+}
+
+return true;

@@ -1,0 +1,56 @@
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addField @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 302) Error adding field transport.modTransportProvider->active: Array
+(
+    [0] => 42S21
+    [1] => 1060
+    [2] => Duplicate column name 'active'
+)
+
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addField @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 302) Error adding field transport.modTransportProvider->priority: Array
+(
+    [0] => 42S21
+    [1] => 1060
+    [2] => Duplicate column name 'priority'
+)
+
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addField @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 302) Error adding field transport.modTransportProvider->properties: Array
+(
+    [0] => 42S21
+    [1] => 1060
+    [2] => Duplicate column name 'properties'
+)
+
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addField @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 302) Error adding field modCategory->rank: Array
+(
+    [0] => 42S21
+    [1] => 1060
+    [2] => Duplicate column name 'rank'
+)
+
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addIndex @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 330) Error adding index rank to modCategory: Array
+(
+    [0] => 42000
+    [1] => 1061
+    [2] => Duplicate key name 'rank'
+)
+
+[2016-01-08 12:13:04] (ERROR in xPDOManager_mysql::addIndex @ D:\web\OpenServer\domains\shri-lanka.loc\core\xpdo\om\mysql\xpdomanager.class.php : 330) Error adding index tmplvar_template to modTemplateVarResourceGroup: Array
+(
+    [0] => 42000
+    [1] => 1061
+    [2] => Duplicate key name 'tmplvar_template'
+)
+
+[2016-01-08 12:13:04] (ERROR @ /setup/index.php) Error adding index user_occured to modManagerLog: No metadata defined
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/daaf224e93519d2a7ab7eb7044c24520/0/ to D:/web/OpenServer/domains/shri-lanka.loc/index.php
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/daaf224e93519d2a7ab7eb7044c24520/1/ to D:/web/OpenServer/domains/shri-lanka.loc/ht.access
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/0/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/assets
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/1/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/controllers
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/2/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/templates
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/3/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/min
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/4/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/ht.access
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/5/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/cache.manifest.php
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not copy D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/modContext/7a6d878454764053a08ae73e7899fd47/6/ to D:/web/OpenServer/domains/shri-lanka.loc/manager/index.php
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not install files from D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/xPDOFileVehicle/43658885512c425e7a878ce0fbeda2ba/ to D:/web/OpenServer/domains/shri-lanka.loc/connectors/
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not install files from D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/xPDOFileVehicle/c86940a213053dc941cd7508ad1372df/ to D:/web/OpenServer/domains/shri-lanka.loc/connectors/
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not install files from D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/xPDOFileVehicle/1c0f6d39c62bfbd91919e20d8eb5366e/ to D:/web/OpenServer/domains/shri-lanka.loc/connectors/
+[2016-01-08 12:13:06] (ERROR @ /setup/index.php) Could not install files from D:/web/OpenServer/domains/shri-lanka.loc/core/packages/core/xPDOFileVehicle/6f7e4f39b9b276f7be62dc56b3fb5192/ to D:/web/OpenServer/domains/shri-lanka.loc/connectors/

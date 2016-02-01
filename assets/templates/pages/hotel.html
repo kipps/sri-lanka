@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[++site_name]] - [[*pagetitle]]</title>
+  <base href="[[++site_url]]" /> [[$head_link]]
+</head>
+
+<body class="hotel-page page-inset">
+  <header class="group main">
+    <div class="container">
+      <a href="#" class="min-logo">
+        <img src="/i/logo-min.png" alt="logo" />
+      </a>
+      [[$nav-main]]
+    </div>
+  </header>
+  <div id="gallery">
+    <!-- <a href="/i/slider/[[*slider-direct]]/large/1.jpg">
+      <img src="/i/slider/[[*slider-direct]]/thumbs/1.jpg" alt="Photo 1" />
+    </a>
+    <a href="/i/slider/[[*slider-direct]]/large/2.jpg">
+      <img src="/i/slider/[[*slider-direct]]/thumbs/2.jpg" alt="Photo 2" />
+    </a>
+    <a href="/i/slider/[[*slider-direct]]/large/3.jpg">
+      <img src="/i/slider/[[*slider-direct]]/thumbs/3.jpg" alt="Photo 3" />
+    </a> -->
+    [[!Gallery? &album=`[[*slider-direct]]` &imageWidth=`800` &imageHeight=`600` &thumbTpl=`slider-img` &sort=`rand`]]
+  </div>
+  <div class="container text-content">
+
+    <div class="row">
+      <div class="Breadcrumbs page-bread">
+        [[Breadcrumbs]]
+      </div>
+      <h1>[[*pagetitle]]</h1>
+      [[*content]]
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab">Цены</a></li>
+        <li><a href="#profile" data-toggle="tab">Условия бронирования и оплаты</a></li>
+        <li><a href="#messages" data-toggle="tab">Комментарии</a></li>
+        <li><a href="#settings" data-toggle="tab">Координаты отеля</a></li>
+        <!-- <li><a href="#photos" data-toggle="tab">Дополнительные фотографии</a></li> -->
+      </ul>
+      <div class="tab-content" id="tabInfo">
+        <div class="tab-pane fade in active" id="home">[[*price]]</div>
+        <div class="tab-pane fade" id="profile">[[*conditions]]</div>
+        <div class="tab-pane fade" id="messages">...</div>
+        <div class="tab-pane fade" id="settings">
+          <em>[[*coordinates]]</em>
+        </div>
+        <!-- <div class="tab-pane fade" id="photos">[[*gallereya-1]]</div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="group main clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Основная информация</h4>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Где жить</a></li>
+            <li><a href="#">Чем занятся</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Медиа</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Отзовы</a></li>
+            <li><a href="#">Конткты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Полезная инофрмация</h4>
+          <ul>
+            <li><a href="#">Как долететь</a></li>
+            <li><a href="#">Местная кухня</a></li>
+            <li><a href="#">Местные обычаи</a></li>
+            <li><a href="#">Праздники и фестивали</a></li>
+            <li><a href="#">Карта Шри-Ланки</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Основные туры</h4>
+          <ul>
+            <li><a href="#">Тур на 2 дня</a></li>
+            <li><a href="#">Тур на 7 дней</a></li>
+            <li><a href="#">Тур на 12 дней</a></li>
+            <li><a href="#">Тур на месяц</a></li>
+            <li><a href="#">Свадебный тур</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Медиа</h4>
+          <ul>
+            <li><a href="#">Фотографии</a></li>
+            <li><a href="#">Видео</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <div id="page-preloader"><span class="spinner"></span></div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/jquery.vide.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/jgallery.min.js?v=1.5.5"></script>
+  <script type="text/javascript" src="/js/touchswipe.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      var $preloader = $('#page-preloader'),
+        $spinner = $preloader.find('.spinner');
+      $spinner.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+    $(document).ready(function() {
+      $('.slider-content').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToScroll: 3
+      });
+
+      $(function() {
+        $("#gallery").jGallery({
+          "transitionCols": "1",
+          "transitionRows": "1",
+          "thumbnailsPosition": "left",
+          "thumbType": "image",
+          "backgroundColor": "FFFFFF",
+          "textColor": "000000",
+          // "transition": "rotateRightSideFirst_moveFromRight",
+          "mode": "standard"
+        });
+      });
+
+      $('#tabInfo a').click(function(e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    });
+  </script>
+</body>
+
+</html>

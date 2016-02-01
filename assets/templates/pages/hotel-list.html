@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[++site_name]] - [[*pagetitle]]</title>
+  <base href="[[++site_url]]" /> [[$head_link]]
+</head>
+
+<body class="page-inset">
+  <header class="group main">
+    <div class="container">
+      <a href="#" class="min-logo">
+        <img src="/i/logo-min.png" alt="logo" />
+      </a>
+      [[$nav-main]]
+    </div>
+  </header>
+  <div id="page-header" style="width: 100%; height:400px; position: relative;" data-vide-bg=[[*name-video]] data-vide-options="position: 0% 50%">
+
+
+    <div class="title-text-box">
+      <h1>[[*pagetitle]]</h1>
+    </div>
+    <div class="bg-slider-box-view-2"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="Breadcrumbs page-bread text-left">
+        [[Breadcrumbs]]
+      </div>
+    </div>
+
+  </div>
+  <div class="list-page">
+
+    <div class="filter-nav">
+      <div class="button-div active">Все</div>
+      <div class="button-div">Отели</div>
+      <div class="button-div">Виллы</div>
+      <div class="button-div">Геcтхаусы</div>
+    </div>
+    [[*content]]
+  </div>
+
+  <footer class="group main clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Основная информация</h4>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Где жить</a></li>
+            <li><a href="#">Чем занятся</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Медиа</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Отзовы</a></li>
+            <li><a href="#">Конткты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Полезная инофрмация</h4>
+          <ul>
+            <li><a href="#">Как долететь</a></li>
+            <li><a href="#">Местная кухня</a></li>
+            <li><a href="#">Местные обычаи</a></li>
+            <li><a href="#">Праздники и фестивали</a></li>
+            <li><a href="#">Карта Шри-Ланки</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Основные туры</h4>
+          <ul>
+            <li><a href="#">Тур на 2 дня</a></li>
+            <li><a href="#">Тур на 7 дней</a></li>
+            <li><a href="#">Тур на 12 дней</a></li>
+            <li><a href="#">Тур на месяц</a></li>
+            <li><a href="#">Свадебный тур</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4>Медиа</h4>
+          <ul>
+            <li><a href="#">Фотографии</a></li>
+            <li><a href="#">Видео</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <div id="page-preloader"><span class="spinner"></span></div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/jquery.vide.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      var $preloader = $('#page-preloader'),
+        $spinner = $preloader.find('.spinner');
+      $spinner.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+    });
+    $(document).ready(function() {
+      $('.slider-content').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToScroll: 3
+      });
+    });
+  </script>
+</body>
+
+</html>
