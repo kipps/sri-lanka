@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.4, created on 2016-01-30 21:17:25
+<?php /* Smarty version Smarty-3.0.4, created on 2016-02-05 18:20:00
          compiled from "C:/WebServer/OpenServer/domains/sri-lanka.loc/setup/templates/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:752856acfe35f3f4c1-82267974%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1669656b4bda0aa0d46-50880775%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '752856acfe35f3f4c1-82267974',
+  'nocache_hash' => '1669656b4bda0aa0d46-50880775',
   'function' => 
   array (
   ),

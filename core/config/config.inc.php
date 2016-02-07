@@ -15,35 +15,35 @@ $config_options = array (
 $driver_options = array (
 );
 
-$lastInstallTime = 1452244384;
+$lastInstallTime = 1454685598;
 
-$site_id = 'modx568f7da0868b86.98584015';
-$site_sessionname = 'SN568f7d5aba4e1';
+$site_id = 'modx56b4bd9ed44347.16157712';
+$site_sessionname = 'SN56b4bd4064d61';
 $https_port = '443';
-$uuid = '3f890cd1-2fbe-41f6-b9d1-937b85fa6cd7';
+$uuid = '099b9139-157f-4baf-8900-f31f6a1210e7';
 
 if (!defined('MODX_CORE_PATH')) {
-    $modx_core_path= 'D:/web/OpenServer/domains/shri-lanka.loc/core/';
+    $modx_core_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/core/';
     define('MODX_CORE_PATH', $modx_core_path);
 }
 if (!defined('MODX_PROCESSORS_PATH')) {
-    $modx_processors_path= 'D:/web/OpenServer/domains/shri-lanka.loc/core/model/modx/processors/';
+    $modx_processors_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/core/model/modx/processors/';
     define('MODX_PROCESSORS_PATH', $modx_processors_path);
 }
 if (!defined('MODX_CONNECTORS_PATH')) {
-    $modx_connectors_path= 'D:/web/OpenServer/domains/shri-lanka.loc/connectors/';
+    $modx_connectors_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/connectors/';
     $modx_connectors_url= '/connectors/';
     define('MODX_CONNECTORS_PATH', $modx_connectors_path);
     define('MODX_CONNECTORS_URL', $modx_connectors_url);
 }
 if (!defined('MODX_MANAGER_PATH')) {
-    $modx_manager_path= 'D:/web/OpenServer/domains/shri-lanka.loc/manager/';
+    $modx_manager_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/manager/';
     $modx_manager_url= '/manager/';
     define('MODX_MANAGER_PATH', $modx_manager_path);
     define('MODX_MANAGER_URL', $modx_manager_url);
 }
 if (!defined('MODX_BASE_PATH')) {
-    $modx_base_path= 'D:/web/OpenServer/domains/shri-lanka.loc/';
+    $modx_base_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/';
     $modx_base_url= '/';
     define('MODX_BASE_PATH', $modx_base_path);
     define('MODX_BASE_URL', $modx_base_url);
@@ -59,10 +59,10 @@ if (!defined('MODX_URL_SCHEME')) {
 }
 if (!defined('MODX_HTTP_HOST')) {
     if(defined('PHP_SAPI') && (PHP_SAPI == "cli" || PHP_SAPI == "embed")) {
-        $http_host='shri-lanka.loc';
+        $http_host='sri-lanka.loc';
         define('MODX_HTTP_HOST', $http_host);
     } else {
-        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'shri-lanka.loc';
+        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'sri-lanka.loc';
         if ($_SERVER['SERVER_PORT'] != 80) {
             $http_host= str_replace(':' . $_SERVER['SERVER_PORT'], '', $http_host); // remove port from HTTP_HOST
         }
@@ -75,7 +75,7 @@ if (!defined('MODX_SITE_URL')) {
     define('MODX_SITE_URL', $site_url);
 }
 if (!defined('MODX_ASSETS_PATH')) {
-    $modx_assets_path= 'D:/web/OpenServer/domains/shri-lanka.loc/assets/';
+    $modx_assets_path= 'C:/WebServer/OpenServer/domains/sri-lanka.loc/assets/';
     $modx_assets_url= '/assets/';
     define('MODX_ASSETS_PATH', $modx_assets_path);
     define('MODX_ASSETS_URL', $modx_assets_url);

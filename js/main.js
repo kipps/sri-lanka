@@ -62,3 +62,42 @@ $(".all").on("click", function(e){
   $(this).parent("div").children(".button-div").removeClass("active");
   $(this).addClass("active");
 });
+$(".list-box-main .col-md-6").hide();
+$(".list-box-main .link-block.city.beach").parent(".col-md-6").show();
+
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+
+  $(document).ready(function() {
+    $('.slider-content').slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      slidesToScroll: 3
+    });
+
+    $('body').scrollspy({
+      target: '.main-nav'
+    });
+
+    $('#move-where-life').on('click', function(event) {
+      jQuery.scrollTo('#where-life', 1500);
+      event.preventDefault();
+    });
+
+    $('#move-contact').on('click', function(event) {
+      jQuery.scrollTo('#contact', 2500);
+      event.preventDefault();
+    });
+
+    $('#move-what-do').on('click', function(event) {
+      jQuery.scrollTo('#what-do', 2000);
+      event.preventDefault();
+    });
+  });

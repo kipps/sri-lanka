@@ -28,8 +28,8 @@
 
       <div class="list-box-main group">
         <div class="filter-nav">
-          <div class="button-div active all">Все</div>
-          <div class="button-div beach-link">Пляж</div>
+          <div class="button-div  all">Все</div>
+          <div class="button-div active beach-link">Пляж</div>
           <div class="button-div town-link">Город</div>
           <div class="button-div rocks-link">Горы</div>
           <div class="button-div jungly-link">Джунги</div>
@@ -197,57 +197,79 @@
   </div> -->
 
 
-  <div id="map_canvas" style="width: 100%; height: 600px;"></div>
+  <div id="map_canvas" style="width: 100%; height: 350px;"></div>
 
-  <footer class="group main clearfix">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h4>Основная информация</h4>
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Где жить</a></li>
-            <li><a href="#">Чем занятся</a></li>
-            <li><a href="#">Полезная информация</a></li>
-            <li><a href="#">Медиа</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Блог</a></li>
-            <li><a href="#">Отзовы</a></li>
-            <li><a href="#">Конткты</a></li>
-          </ul>
+  <footer class="main clearfix">
+    <div class="first-line-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-2">
+          <div class="col-md-12">
+            <div class="footer-logo-div">
+              <a href="/" class="logo-footer"><img src="/i/logo.png"  class="logo-footer-img"/></a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-10">
+            <div class="col-md-3 col-sm-3">
+              <h4>Основная информация</h4>
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Где жить</a></li>
+                <li><a href="#">Чем занятся</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Медиа</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Отзовы</a></li>
+                <li><a href="#">Конткты</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+              <h4>Полезная инофрмация</h4>
+              <ul>
+                <li><a href="#">Как долететь</a></li>
+                <li><a href="#">Местная кухня</a></li>
+                <li><a href="#">Местные обычаи</a></li>
+                <li><a href="#">Праздники и фестивали</a></li>
+                <li><a href="#">Карта Шри-Ланки</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+              <h4>Основные туры</h4>
+              <ul>
+                <li><a href="#">Тур на 2 дня</a></li>
+                <li><a href="#">Тур на 7 дней</a></li>
+                <li><a href="#">Тур на 12 дней</a></li>
+                <li><a href="#">Тур на месяц</a></li>
+                <li><a href="#">Свадебный тур</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3">
+              <h4>Медиа</h4>
+              <ul>
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="#">Видео</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
         </div>
-
-        <div class="col-md-3">
-          <h4>Полезная инофрмация</h4>
-          <ul>
-            <li><a href="#">Как долететь</a></li>
-            <li><a href="#">Местная кухня</a></li>
-            <li><a href="#">Местные обычаи</a></li>
-            <li><a href="#">Праздники и фестивали</a></li>
-            <li><a href="#">Карта Шри-Ланки</a></li>
-          </ul>
+      </div>
+    </div>
+    <div class="bootom-dark-footer text-center">
+      <div class="container">
+        <div class="row">
+        <small>Copyright (c) 2015 Copyright Holder All Rights Reserved.</small>
         </div>
-
-        <div class="col-md-3">
-          <h4>Основные туры</h4>
-          <ul>
-            <li><a href="#">Тур на 2 дня</a></li>
-            <li><a href="#">Тур на 7 дней</a></li>
-            <li><a href="#">Тур на 12 дней</a></li>
-            <li><a href="#">Тур на месяц</a></li>
-            <li><a href="#">Свадебный тур</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-3">
-          <h4>Медиа</h4>
-          <ul>
-            <li><a href="#">Фотографии</a></li>
-            <li><a href="#">Видео</a></li>
-          </ul>
-        </div>
-
-
       </div>
     </div>
   </footer>
@@ -261,47 +283,7 @@
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="/js/main.js"></script>
-  <script type="text/javascript">
 
-  $(window).on('load', function () {
-      var $preloader = $('#page-preloader'),
-          $spinner   = $preloader.find('.spinner');
-      $spinner.fadeOut();
-      $preloader.delay(350).fadeOut('slow');
-  });
-
-    $(document).ready(function() {
-      $('.slider-content').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        slidesToScroll: 3
-      });
-
-      $('body').scrollspy({
-        target: '.main-nav'
-      });
-
-      $('#move-where-life').on('click', function(event) {
-        jQuery.scrollTo('#where-life', 1500);
-        event.preventDefault();
-      });
-
-      $('#move-contact').on('click', function(event) {
-        jQuery.scrollTo('#contact', 2500);
-        event.preventDefault();
-      });
-
-      $('#move-what-do').on('click', function(event) {
-        jQuery.scrollTo('#what-do', 2000);
-        event.preventDefault();
-      });
-
-
-    });
-  </script>
 </body>
 
 </html>
